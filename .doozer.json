@@ -20,7 +20,7 @@
 			],
 			"environment": {
 				"DEVKITPRO": "/project/devkitPro",
-				"DEVKITA64": "$(DEVKITPRO)/devkitA64",
+				"DEVKITA64": "/project/devkitPro/devkitA64",
 				"DEVKITURL": "https://downloads.sourceforge.net/project/devkitpro/devkitA64/alpha7/devkitA64_a7-x86_64-linux.7z"
 			}
 		}
