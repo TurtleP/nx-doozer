@@ -12,6 +12,7 @@
       "buildcmd": [
         "wget ${UPDATEURL}",
         "perl devkitA64update.pl",
+        "pacman -Syy",
         "pacman-key --recv F7FD5492264BB9D0",
         "pacman-key --lsign F7FD5492264BB9D0",
         "echo ${PACMANDATA} | sudo tee -a /etc/pacman.conf > /dev/null",
