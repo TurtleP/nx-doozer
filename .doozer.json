@@ -12,6 +12,7 @@
       "buildcmd": [
         "wget ${UPDATEURL}",
         "sudo perl devkitA64update.pl",
+        "wget ${PACMANURL}",
         "sudo dpkg -i devkitpro-pacman.deb",
         "sudo dkp-pacman -S switch-sdl2",
         "make"
