@@ -15,8 +15,8 @@
         "make"
       ],
       "environment": {
-        "DEVKITPRO": "/project/devkitPro",
-        "DEVKITA64": "/project/devkitPro/devkitA64",
+        "DEVKITPRO": "/opt/devkitpro",
+        "DEVKITA64": "/opt/devkitpro/devkitA64",
         "UPDATEURL": "https://raw.githubusercontent.com/devkitPro/installer/master/perl/devkitA64update.pl"
       },
       "artifacts": [
