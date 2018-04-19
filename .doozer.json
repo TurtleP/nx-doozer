@@ -12,12 +12,15 @@
       "buildcmd": [
         "wget ${UPDATEURL}",
         "sudo perl devkitA64update.pl",
+        "sudo dpkg -i devkitpro-pacman.deb",
+        "sudo dkp-pacman -S switch-sdl2",
         "make"
       ],
       "environment": {
         "DEVKITPRO": "/opt/devkitpro",
         "DEVKITA64": "/opt/devkitpro/devkitA64",
-        "UPDATEURL": "https://raw.githubusercontent.com/devkitPro/installer/master/perl/devkitA64update.pl"
+        "UPDATEURL": "https://raw.githubusercontent.com/devkitPro/installer/master/perl/devkitA64update.pl",
+        "PACMANURL": "https://github.com/devkitPro/pacman/releases/download/v1.0.0/devkitpro-pacman.deb"
       },
       "artifacts": [
         "*.nro"
