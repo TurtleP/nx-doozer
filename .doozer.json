@@ -11,7 +11,7 @@
       ],
       "buildcmd": [
         "wget ${UPDATEURL}",
-        "perl devkitA64update.pl",
+        "sudo perl devkitA64update.pl",
         "make"
       ],
       "environment": {
