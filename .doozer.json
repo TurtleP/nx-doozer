@@ -10,7 +10,7 @@
       ],
       "buildcmd": [
         "wget ${UPDATEURL}",
-        "perl devkitA64update.pl",
+        "sudo -E perl devkitA64update.pl",
         "wget ${PACMANURL}",
         "sudo -E dpkg -i devkitpro-pacman.deb",
         "dkp-pacman-key --init",
