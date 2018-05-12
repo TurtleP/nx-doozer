@@ -6,7 +6,7 @@
             "buildcmd": [
 				"git clone ${LIBNX}",
 				"cd libnx",
-				"make && make install",
+				"sduo -E make install",
 				"make -j${PARALLEL}"
 			],
 
