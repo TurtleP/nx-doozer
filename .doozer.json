@@ -11,6 +11,7 @@
                 "git clone ${LIBNX}",
                 "cd libnx",
                 "sudo -E make install",
+                "cd ..",
                 "make -j${PARALLEL}"
             ],
 
