@@ -9,7 +9,7 @@
 
             "buildcmd": [
                 "git clone ${LIBNX}",
-                "sudo -E make install -C libnx",
+                "sudo -E make -C libnx install",
                 "make"
             ],
 
