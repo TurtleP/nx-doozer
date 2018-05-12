@@ -3,9 +3,14 @@
         "lovepotion": {
             "buildenv": "docker:devkitpro/devkita64",
             
-            "buildcmd": "make -j${PARALLEL}",
+            "buildcmd": [
+				"git clone ${LIBNX}",
+				"cd libnx; make; cd ..",
+				"make -j${PARALLEL}"
+			],
 
             "environment": {
+				"LIBNX": "https://github.com/switchbrew/libnx",
                 "DEVKITPRO": "/opt/devkitpro",
                 "MYBUILDID": "${REVISION}"
             },
