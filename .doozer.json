@@ -5,7 +5,8 @@
             
             "buildcmd": [
 				"git clone ${LIBNX}",
-				"cd libnx; make; cd ..",
+				"cd libnx",
+				"make && make install",
 				"make -j${PARALLEL}"
 			],
 
