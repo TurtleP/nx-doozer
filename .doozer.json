@@ -9,8 +9,8 @@
 
             "buildcmd": [
                 "git clone ${LIBNX}",
-                "sudo -E make install -C libnx/",
-                "sudo -E make -j${PARALLEL}"
+                "sudo -E make install -C libnx",
+                "make"
             ],
 
             "environment": {
